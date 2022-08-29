@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TraceRoute/1.0.0": {
+        "dependencies": {
+          "Shields.GraphViz": "1.0.2"
+        },
+        "runtime": {
+          "TraceRoute.dll": {}
+        }
+      },
+      "Microsoft.Bcl.Immutable/1.0.34": {},
+      "Shields.GraphViz/1.0.2": {
+        "dependencies": {
+          "Microsoft.Bcl.Immutable": "1.0.34"
+        },
+        "runtime": {
+          "lib/net45/Shields.GraphViz.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TraceRoute/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Bcl.Immutable/1.0.34": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tG6QdCn1UyJUX/7EKlcQYmlvuHuTrFW9xkGlFrep7HNYLBIC8LUSRVaP0SYJdb7v2TVMweeBoZwC+GlRi88Tig==",
+      "path": "microsoft.bcl.immutable/1.0.34",
+      "hashPath": "microsoft.bcl.immutable.1.0.34.nupkg.sha512"
+    },
+    "Shields.GraphViz/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-01WxNNzL6rJNj1JeFzu2RN318FVkWmzaQ3VPltehTXx2X9/52+mXFpDE1thflw8Hbet+fTYUy0wRG7cAXRZKtw==",
+      "path": "shields.graphviz/1.0.2",
+      "hashPath": "shields.graphviz.1.0.2.nupkg.sha512"
+    }
+  }
+}

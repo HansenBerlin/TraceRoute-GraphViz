@@ -1,0 +1,153 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Microsoft.Bcl.Immutable/1.0.34": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        }
+      },
+      "Shields.GraphViz/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Immutable": "1.0.34"
+        },
+        "compile": {
+          "lib/net45/Shields.GraphViz.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Shields.GraphViz.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Bcl.Immutable/1.0.34": {
+      "sha512": "tG6QdCn1UyJUX/7EKlcQYmlvuHuTrFW9xkGlFrep7HNYLBIC8LUSRVaP0SYJdb7v2TVMweeBoZwC+GlRi88Tig==",
+      "type": "package",
+      "path": "microsoft.bcl.immutable/1.0.34",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "microsoft.bcl.immutable.1.0.34.nupkg.sha512",
+        "microsoft.bcl.immutable.nuspec"
+      ]
+    },
+    "Shields.GraphViz/1.0.2": {
+      "sha512": "01WxNNzL6rJNj1JeFzu2RN318FVkWmzaQ3VPltehTXx2X9/52+mXFpDE1thflw8Hbet+fTYUy0wRG7cAXRZKtw==",
+      "type": "package",
+      "path": "shields.graphviz/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Shields.GraphViz.dll",
+        "lib/net45/Shields.GraphViz.xml",
+        "shields.graphviz.1.0.2.nupkg.sha512",
+        "shields.graphviz.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Shields.GraphViz >= 1.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Hannes\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Hannes\\source\\repos\\HWR\\Studienarbeit\\TraceRoute\\TraceRoute\\TraceRoute.csproj",
+      "projectName": "TraceRoute",
+      "projectPath": "C:\\Users\\Hannes\\source\\repos\\HWR\\Studienarbeit\\TraceRoute\\TraceRoute\\TraceRoute.csproj",
+      "packagesPath": "C:\\Users\\Hannes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hannes\\source\\repos\\HWR\\Studienarbeit\\TraceRoute\\TraceRoute\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Hannes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Shields.GraphViz": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Bcl.Immutable 1.0.34' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Bcl.Immutable",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Shields.GraphViz 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Shields.GraphViz",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
