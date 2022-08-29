@@ -45,7 +45,7 @@ public class GraphFactory
 
     private async Task Save(List<Statement> stm, string fileName)
     {
-        Graph graph = Graph.Undirected.AddRange(stm);
+        Graph graph = Graph.Directed.AddRange(stm);
 
         IRenderer renderer = new Renderer(_path);
         await using Stream file = File.Create(fileName);

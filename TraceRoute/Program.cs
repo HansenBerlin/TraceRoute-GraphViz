@@ -9,8 +9,9 @@ const string filenameCombined = "combinedTraceRoute.png";
 
 List<string> ips = new List<string>
 {
-    "62.214.38.44",
-    "142.250.186.174"
+    "20.112.52.29",         // MS
+    "142.250.186.174",      // Google
+    "194.94.22.19"          // HWR
 };
 
 var tr = new TraceRt();
@@ -18,8 +19,13 @@ var tasks= ips.Select(ip => tr.TracertIpsAsync(ip, maxHops, timeout, print)).Cas
 await Task.WhenAll(tasks);
 var results= tasks.Select(task => ((Task<List<string>>) task).Result).ToList();
 
+// Combined graph
 var graphCreator = new GraphFactory(path, filenameSingle, filenameCombined);
 await graphCreator.Create(results);
+
+// Single graph
+var result = await tr.TracertIpsAsync(ips[0], maxHops, timeout, print);
+await graphCreator.Create(result);
 
 
 

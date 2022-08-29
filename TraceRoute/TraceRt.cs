@@ -6,6 +6,7 @@ namespace TraceRoute;
 
 public class TraceRt
 {
+    private int _timeoutsCount = 0;
     public async Task<List<string>> TracertIpsAsync(string ipAddress, int maxHops, int timeout, bool isPrinted)
     {
         List<string> ips = new();
@@ -30,10 +31,11 @@ public class TraceRt
             catch (Exception) { }
 
             string ipaddress = string.IsNullOrEmpty(hostname) ? reply.Address.ToString() : $"{hostname} [{reply.Address}]";
+            ipaddress = ipaddress == "0.0.0.0" ? $"timeout-{_timeoutsCount++}" : ipaddress;
             ips.Add(ipaddress);
             if (isPrinted)
             {
-                var entry = new TracertEntry(pingOptions.Ttl, reply.Address.ToString(), hostname,
+                var entry = new TraceRtEntry(pingOptions.Ttl, reply.Address.ToString(), hostname,
                     pingReplyTime.ElapsedMilliseconds, reply.Status, reply.RoundtripTime);
                 entry.Print();
             }

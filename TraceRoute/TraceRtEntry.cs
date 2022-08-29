@@ -2,7 +2,7 @@
 
 namespace TraceRoute;
 
-public class TracertEntry
+public class TraceRtEntry
 {
     private readonly int _hopId;
     private readonly long _roundtripTime;
@@ -11,7 +11,7 @@ public class TracertEntry
     private readonly long _replyTime;
     private readonly IPStatus _replyStatus;
     
-    public TracertEntry(int hopId, string address, string hostname, long replyTime, IPStatus replyStatus, long roundtripTime)
+    public TraceRtEntry(int hopId, string address, string hostname, long replyTime, IPStatus replyStatus, long roundtripTime)
     {
         _hopId = hopId;
         _address = address;
